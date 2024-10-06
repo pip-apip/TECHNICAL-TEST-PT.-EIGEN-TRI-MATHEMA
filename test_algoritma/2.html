@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+</head>
+<body>
+    <script>
+        const sentence = "Saya sangat senang bermain alat musik gitar"
+        const split = sentence.split(' ');
+        let maxLengt = 0;
+        let index = 0;
+        for(var i = 0; i < split.length; i++){
+            if(maxLengt < split[i].length){
+                maxLengt = split[i].length;
+                index = i;
+            }
+        }
+        console.log(split[index]+" : "+maxLengt+" character");
+    </script>
+</body>
+</html>

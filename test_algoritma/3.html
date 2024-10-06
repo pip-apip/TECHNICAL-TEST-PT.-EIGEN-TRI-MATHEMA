@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3</title>
+</head>
+<body>
+    <script>
+        const input = ['xc', 'dz', 'bbb', 'dz'];
+        const query = ['bbb', 'ac', 'dz'];
+        const output = [];
+
+        for(var x = 0; x < query.length; x++){
+            let count = 0;
+            for(var y = 0; y < input.length; y++){
+                if(query[x] == input[y]){
+                    count = count+1;
+                }
+            }
+            output.push(count);
+        }
+        console.log(output)
+    </script>
+</body>
+</html>

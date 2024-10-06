@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4</title>
+</head>
+<body>
+    <script>
+        const matrix = [[1, 2, 0], [4, 5, 6], [7, 8, 9]];
+
+        let matrixLengthIndex = matrix.length-1;
+        let firstDiagonal = 0;
+        let secDiagonal = 0;
+
+        for(var i = 0; i < matrix.length; i++){
+            firstDiagonal = firstDiagonal + matrix[i][i]
+        }
+
+        for(var i = 0; i < matrix.length ; i++){
+            secDiagonal = secDiagonal + matrix[i][matrixLengthIndex]
+            matrixLengthIndex--;
+        }
+
+        console.log("First Diagonal : "+firstDiagonal);
+        console.log("Second Diagonal : "+secDiagonal);
+        console.log("Output : "+firstDiagonal+" - "+secDiagonal+" = "+(firstDiagonal-secDiagonal));
+    </script>
+</body>
+</html>
